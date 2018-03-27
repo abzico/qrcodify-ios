@@ -71,6 +71,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bF3-gS-qVf"/>
                     <connections>
+                        <outlet property="generateButton" destination="Efb-t1-Hu4" id="bbe-ZQ-elI"/>
                         <outlet property="textInput" destination="Gih-bt-sT5" id="Q6x-Q0-SPO"/>
                         <segue destination="bRb-Oo-mri" kind="show" identifier="showQRCodeResultSegue" id="OCr-af-BEJ"/>
                     </connections>

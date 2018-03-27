@@ -18,6 +18,7 @@ class QRCodeResultViewController : UIViewController {
     
     var textInput: String?
     private let kPreErrorString: String = "Error, cannot generate QRCode"
+    private var appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()

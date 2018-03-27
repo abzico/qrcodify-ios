@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let defaults = UserDefaults(suiteName: SharedConstants.APP_GROUP_IDENTIFIER)!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -35,6 +35,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        // check input string from UserDefaults
+        let inputString = defaults.value(forKey: SharedConstants.INPUTTEXT_KEY) as? String
+        if inputString != nil {
+            print("read input string from NSDefaults: " + inputString!)
+            
+            // send notification
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: SharedConstants.Notification.didReadInputString.rawValue), object: nil, userInfo: [SharedConstants.DIDREAD_INPUTSTRING_NOTIFICATION_PARAM_STRING: inputString!])
+            
+            // remove value from UserDefaults
+            // so next time we won't repeat the process again unneccessary
+            defaults.removeObject(forKey: SharedConstants.INPUTTEXT_KEY)
+        }
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

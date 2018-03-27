@@ -14,7 +14,36 @@
 		1E8812DD206A9BFA006DFB84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E8812DB206A9BFA006DFB84 /* LaunchScreen.storyboard */; };
 		1E8812E5206A9F8F006DFB84 /* QRCodeResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8812E4206A9F8F006DFB84 /* QRCodeResultViewController.swift */; };
 		1E8812E7206AAFC9006DFB84 /* ErrorMessageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8812E6206AAFC9006DFB84 /* ErrorMessageConstants.swift */; };
+		1E8812EF206AD658006DFB84 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8812EE206AD658006DFB84 /* ShareViewController.swift */; };
+		1E8812F2206AD658006DFB84 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E8812F0206AD658006DFB84 /* MainInterface.storyboard */; };
+		1E8812F6206AD658006DFB84 /* shareext.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E8812EC206AD658006DFB84 /* shareext.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1E8812FF206AE751006DFB84 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8812FE206AE751006DFB84 /* SharedConstants.swift */; };
+		1E881300206AE7AA006DFB84 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8812FE206AE751006DFB84 /* SharedConstants.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E8812F4206AD658006DFB84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E8812C7206A9BF9006DFB84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E8812EB206AD658006DFB84;
+			remoteInfo = shareext;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E8812FA206AD658006DFB84 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1E8812F6206AD658006DFB84 /* shareext.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1E8812CF206A9BF9006DFB84 /* qrcodify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrcodify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +55,24 @@
 		1E8812DE206A9BFA006DFB84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E8812E4206A9F8F006DFB84 /* QRCodeResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeResultViewController.swift; sourceTree = "<group>"; };
 		1E8812E6206AAFC9006DFB84 /* ErrorMessageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageConstants.swift; sourceTree = "<group>"; };
+		1E8812EC206AD658006DFB84 /* shareext.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = shareext.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E8812EE206AD658006DFB84 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		1E8812F1206AD658006DFB84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1E8812F3206AD658006DFB84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E8812FB206AD6A1006DFB84 /* qrcodify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = qrcodify.entitlements; sourceTree = "<group>"; };
+		1E8812FC206AD6DB006DFB84 /* shareext.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shareext.entitlements; sourceTree = "<group>"; };
+		1E8812FE206AE751006DFB84 /* SharedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1E8812CC206A9BF9006DFB84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E8812E9206AD658006DFB84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,7 +85,9 @@
 		1E8812C6206A9BF9006DFB84 = {
 			isa = PBXGroup;
 			children = (
+				1E8812FD206AE744006DFB84 /* shared */,
 				1E8812D1206A9BF9006DFB84 /* qrcodify */,
+				1E8812ED206AD658006DFB84 /* shareext */,
 				1E8812D0206A9BF9006DFB84 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				1E8812CF206A9BF9006DFB84 /* qrcodify.app */,
+				1E8812EC206AD658006DFB84 /* shareext.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +104,7 @@
 		1E8812D1206A9BF9006DFB84 /* qrcodify */ = {
 			isa = PBXGroup;
 			children = (
+				1E8812FB206AD6A1006DFB84 /* qrcodify.entitlements */,
 				1E8812D2206A9BF9006DFB84 /* AppDelegate.swift */,
 				1E8812D4206A9BF9006DFB84 /* ViewController.swift */,
 				1E8812D6206A9BF9006DFB84 /* Main.storyboard */,
@@ -70,6 +117,25 @@
 			path = qrcodify;
 			sourceTree = "<group>";
 		};
+		1E8812ED206AD658006DFB84 /* shareext */ = {
+			isa = PBXGroup;
+			children = (
+				1E8812FC206AD6DB006DFB84 /* shareext.entitlements */,
+				1E8812EE206AD658006DFB84 /* ShareViewController.swift */,
+				1E8812F0206AD658006DFB84 /* MainInterface.storyboard */,
+				1E8812F3206AD658006DFB84 /* Info.plist */,
+			);
+			path = shareext;
+			sourceTree = "<group>";
+		};
+		1E8812FD206AE744006DFB84 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				1E8812FE206AE751006DFB84 /* SharedConstants.swift */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,15 +146,34 @@
 				1E8812CB206A9BF9006DFB84 /* Sources */,
 				1E8812CC206A9BF9006DFB84 /* Frameworks */,
 				1E8812CD206A9BF9006DFB84 /* Resources */,
+				1E8812FA206AD658006DFB84 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1E8812F5206AD658006DFB84 /* PBXTargetDependency */,
 			);
 			name = qrcodify;
 			productName = qrcodify;
 			productReference = 1E8812CF206A9BF9006DFB84 /* qrcodify.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1E8812EB206AD658006DFB84 /* shareext */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E8812F7206AD658006DFB84 /* Build configuration list for PBXNativeTarget "shareext" */;
+			buildPhases = (
+				1E8812E8206AD658006DFB84 /* Sources */,
+				1E8812E9206AD658006DFB84 /* Frameworks */,
+				1E8812EA206AD658006DFB84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = shareext;
+			productName = shareext;
+			productReference = 1E8812EC206AD658006DFB84 /* shareext.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -102,6 +187,19 @@
 				TargetAttributes = {
 					1E8812CE206A9BF9006DFB84 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					1E8812EB206AD658006DFB84 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -119,6 +217,7 @@
 			projectRoot = "";
 			targets = (
 				1E8812CE206A9BF9006DFB84 /* qrcodify */,
+				1E8812EB206AD658006DFB84 /* shareext */,
 			);
 		};
 /* End PBXProject section */
@@ -134,6 +233,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1E8812EA206AD658006DFB84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E8812F2206AD658006DFB84 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,13 +249,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E8812E7206AAFC9006DFB84 /* ErrorMessageConstants.swift in Sources */,
+				1E8812FF206AE751006DFB84 /* SharedConstants.swift in Sources */,
 				1E8812E5206A9F8F006DFB84 /* QRCodeResultViewController.swift in Sources */,
 				1E8812D5206A9BF9006DFB84 /* ViewController.swift in Sources */,
 				1E8812D3206A9BF9006DFB84 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1E8812E8206AD658006DFB84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E881300206AE7AA006DFB84 /* SharedConstants.swift in Sources */,
+				1E8812EF206AD658006DFB84 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E8812F5206AD658006DFB84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E8812EB206AD658006DFB84 /* shareext */;
+			targetProxy = 1E8812F4206AD658006DFB84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1E8812D6206A9BF9006DFB84 /* Main.storyboard */ = {
@@ -165,6 +290,14 @@
 				1E8812DC206A9BFA006DFB84 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1E8812F0206AD658006DFB84 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E8812F1206AD658006DFB84 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -287,10 +420,13 @@
 		1E8812E2206A9BFA006DFB84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = qrcodify/qrcodify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XGKHW634KL;
 				INFOPLIST_FILE = qrcodify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,16 +441,61 @@
 		1E8812E3206A9BFA006DFB84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = qrcodify/qrcodify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XGKHW634KL;
 				INFOPLIST_FILE = qrcodify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.abzi.qrcodify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1E8812F8206AD658006DFB84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = shareext/shareext.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XGKHW634KL;
+				INFOPLIST_FILE = shareext/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.abzi.qrcodify.shareext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E8812F9206AD658006DFB84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = shareext/shareext.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XGKHW634KL;
+				INFOPLIST_FILE = shareext/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.abzi.qrcodify.shareext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -337,6 +518,15 @@
 			buildConfigurations = (
 				1E8812E2206A9BFA006DFB84 /* Debug */,
 				1E8812E3206A9BFA006DFB84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E8812F7206AD658006DFB84 /* Build configuration list for PBXNativeTarget "shareext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E8812F8206AD658006DFB84 /* Debug */,
+				1E8812F9206AD658006DFB84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

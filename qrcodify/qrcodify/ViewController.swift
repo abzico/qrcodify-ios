@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textInput: UITextField!
+    @IBOutlet weak var generateButton: UIButton!
+    
+    private var appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +20,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         // listen to events changed from UITextField
         textInput.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(beginJourneyForInputString(notification:)), name: NSNotification.Name(rawValue: SharedConstants.Notification.didReadInputString.rawValue), object: nil)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: SharedConstants.Notification.didReadInputString.rawValue), object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,6 +46,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
             // get text input and set it for destination vc
             let targetVC = segue.destination as! QRCodeResultViewController
             targetVC.textInput = textInput.text
+        }
+    }
+    
+    @objc func beginJourneyForInputString(notification: NSNotification) {
+        // get input string from notif
+        let userInfo = notification.userInfo!
+        let inputString = userInfo[SharedConstants.DIDREAD_INPUTSTRING_NOTIFICATION_PARAM_STRING] as! String
+        
+        DispatchQueue.main.async {
+            self.textInput.text = inputString
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {
+                self.generateButton.sendActions(for: UIControlEvents.touchUpInside)
+            })
         }
     }
 }
