@@ -7,6 +7,22 @@ This project works with [QRCoderly](https://github.com/haxpor/qrcoderly-macos) o
 
 Whole process is offline. This means there is no Internet connection needed for QRCoderly to consume QRCode image generated from QRCodify. This will suit users that need a quick and normal way to transfer text/URL between mobile and desktop.
 
+# What it looks like ?
+
+![shot 1](https://i.imgur.com/RjPACZX.png)
+Generate QRCode directly from your input text
+
+![shot 2](https://i.imgur.com/Wc975l9.png)
+Get your QRCode result
+
+![shot 3](https://i.imgur.com/Pt1VGH9.png)
+Or share your URL (or even text) via the app's share extension
+
+![shot 4](https://i.imgur.com/QqitZhP.png)
+Your QRCode will be generated when you open QRCodify app next time
+
+Improvement, or more features might be added thus above images might not always reflect the latest code-based.
+
 # License
 
 [MIT](https://github.com/abzico/qrcodify-ios/blob/master/LICENSE), Abzi.co
