@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E5B81EE206E1BD70030B171 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B81ED206E1BD70030B171 /* Util.swift */; };
 		1E8812D3206A9BF9006DFB84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8812D2206A9BF9006DFB84 /* AppDelegate.swift */; };
 		1E8812D5206A9BF9006DFB84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8812D4206A9BF9006DFB84 /* ViewController.swift */; };
 		1E8812D8206A9BF9006DFB84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E8812D6206A9BF9006DFB84 /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 		1E8812F6206AD658006DFB84 /* shareext.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E8812EC206AD658006DFB84 /* shareext.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1E8812FF206AE751006DFB84 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8812FE206AE751006DFB84 /* SharedConstants.swift */; };
 		1E881300206AE7AA006DFB84 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8812FE206AE751006DFB84 /* SharedConstants.swift */; };
+		DEAD81D6392C6C43AB17044E /* Pods_shareext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73F5A91134B130CBB9593C0 /* Pods_shareext.framework */; };
+		F3D324DC82FD8159790EC42A /* Pods_qrcodify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D546909021FD8E9628F9F845 /* Pods_qrcodify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1E5B81ED206E1BD70030B171 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		1E8812CF206A9BF9006DFB84 /* qrcodify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrcodify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E8812D2206A9BF9006DFB84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E8812D4206A9BF9006DFB84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +66,12 @@
 		1E8812FB206AD6A1006DFB84 /* qrcodify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = qrcodify.entitlements; sourceTree = "<group>"; };
 		1E8812FC206AD6DB006DFB84 /* shareext.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shareext.entitlements; sourceTree = "<group>"; };
 		1E8812FE206AE751006DFB84 /* SharedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
+		7D8DF64EEDD09134291551CC /* Pods-qrcodify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrcodify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-qrcodify/Pods-qrcodify.debug.xcconfig"; sourceTree = "<group>"; };
+		978BC113B5263100B472522B /* Pods-shareext.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shareext.release.xcconfig"; path = "Pods/Target Support Files/Pods-shareext/Pods-shareext.release.xcconfig"; sourceTree = "<group>"; };
+		B0F6E40F9A7B704E2DF256C4 /* Pods-shareext.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shareext.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shareext/Pods-shareext.debug.xcconfig"; sourceTree = "<group>"; };
+		B2C1AF3FC4E9B20DF62E4DB4 /* Pods-qrcodify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrcodify.release.xcconfig"; path = "Pods/Target Support Files/Pods-qrcodify/Pods-qrcodify.release.xcconfig"; sourceTree = "<group>"; };
+		C73F5A91134B130CBB9593C0 /* Pods_shareext.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shareext.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D546909021FD8E9628F9F845 /* Pods_qrcodify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qrcodify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D324DC82FD8159790EC42A /* Pods_qrcodify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +87,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAD81D6392C6C43AB17044E /* Pods_shareext.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16992B1F8CA4CD6552BA474F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D8DF64EEDD09134291551CC /* Pods-qrcodify.debug.xcconfig */,
+				B2C1AF3FC4E9B20DF62E4DB4 /* Pods-qrcodify.release.xcconfig */,
+				B0F6E40F9A7B704E2DF256C4 /* Pods-shareext.debug.xcconfig */,
+				978BC113B5263100B472522B /* Pods-shareext.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1E8812C6206A9BF9006DFB84 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +112,8 @@
 				1E8812D1206A9BF9006DFB84 /* qrcodify */,
 				1E8812ED206AD658006DFB84 /* shareext */,
 				1E8812D0206A9BF9006DFB84 /* Products */,
+				16992B1F8CA4CD6552BA474F /* Pods */,
+				A35526EEED966CE399A4EBD4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +138,7 @@
 				1E8812DE206A9BFA006DFB84 /* Info.plist */,
 				1E8812E4206A9F8F006DFB84 /* QRCodeResultViewController.swift */,
 				1E8812E6206AAFC9006DFB84 /* ErrorMessageConstants.swift */,
+				1E5B81ED206E1BD70030B171 /* Util.swift */,
 			);
 			path = qrcodify;
 			sourceTree = "<group>";
@@ -136,6 +162,15 @@
 			path = shared;
 			sourceTree = "<group>";
 		};
+		A35526EEED966CE399A4EBD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D546909021FD8E9628F9F845 /* Pods_qrcodify.framework */,
+				C73F5A91134B130CBB9593C0 /* Pods_shareext.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,10 +178,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E8812E1206A9BFA006DFB84 /* Build configuration list for PBXNativeTarget "qrcodify" */;
 			buildPhases = (
+				86A6D244B3D569F5D654367C /* [CP] Check Pods Manifest.lock */,
 				1E8812CB206A9BF9006DFB84 /* Sources */,
 				1E8812CC206A9BF9006DFB84 /* Frameworks */,
 				1E8812CD206A9BF9006DFB84 /* Resources */,
 				1E8812FA206AD658006DFB84 /* Embed App Extensions */,
+				201407061951A5C57BA88066 /* [CP] Embed Pods Frameworks */,
+				53EBBD70ADACD0C151E88D3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E8812F7206AD658006DFB84 /* Build configuration list for PBXNativeTarget "shareext" */;
 			buildPhases = (
+				5A37EF4D87F62A0185042ED0 /* [CP] Check Pods Manifest.lock */,
 				1E8812E8206AD658006DFB84 /* Sources */,
 				1E8812E9206AD658006DFB84 /* Frameworks */,
 				1E8812EA206AD658006DFB84 /* Resources */,
+				A184EEC6CE4CC427829BBEE6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,6 +227,7 @@
 				TargetAttributes = {
 					1E8812CE206A9BF9006DFB84 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -195,6 +236,7 @@
 					};
 					1E8812EB206AD658006DFB84 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -204,7 +246,7 @@
 				};
 			};
 			buildConfigurationList = 1E8812CA206A9BF9006DFB84 /* Build configuration list for PBXProject "qrcodify" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -243,12 +285,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		201407061951A5C57BA88066 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-qrcodify/Pods-qrcodify-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qrcodify/Pods-qrcodify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53EBBD70ADACD0C151E88D3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qrcodify/Pods-qrcodify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A37EF4D87F62A0185042ED0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shareext-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86A6D244B3D569F5D654367C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-qrcodify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A184EEC6CE4CC427829BBEE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shareext/Pods-shareext-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1E8812CB206A9BF9006DFB84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1E8812E7206AAFC9006DFB84 /* ErrorMessageConstants.swift in Sources */,
+				1E5B81EE206E1BD70030B171 /* Util.swift in Sources */,
 				1E8812FF206AE751006DFB84 /* SharedConstants.swift in Sources */,
 				1E8812E5206A9F8F006DFB84 /* QRCodeResultViewController.swift in Sources */,
 				1E8812D5206A9BF9006DFB84 /* ViewController.swift in Sources */,
@@ -411,14 +541,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		1E8812E2206A9BFA006DFB84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D8DF64EEDD09134291551CC /* Pods-qrcodify.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -427,10 +557,7 @@
 				DEVELOPMENT_TEAM = XGKHW634KL;
 				INFOPLIST_FILE = qrcodify/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.abzi.qrcodify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -440,6 +567,7 @@
 		};
 		1E8812E3206A9BFA006DFB84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2C1AF3FC4E9B20DF62E4DB4 /* Pods-qrcodify.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -448,10 +576,7 @@
 				DEVELOPMENT_TEAM = XGKHW634KL;
 				INFOPLIST_FILE = qrcodify/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.abzi.qrcodify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -461,17 +586,14 @@
 		};
 		1E8812F8206AD658006DFB84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F6E40F9A7B704E2DF256C4 /* Pods-shareext.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = shareext/shareext.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XGKHW634KL;
 				INFOPLIST_FILE = shareext/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.abzi.qrcodify.shareext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -482,17 +604,14 @@
 		};
 		1E8812F9206AD658006DFB84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 978BC113B5263100B472522B /* Pods-shareext.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = shareext/shareext.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XGKHW634KL;
 				INFOPLIST_FILE = shareext/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.abzi.qrcodify.shareext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

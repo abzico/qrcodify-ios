@@ -25,12 +25,20 @@ class QRCodeResultViewController : UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         setupUI()
-        generateQRCode()
+        generateQRCode(complete: nil)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(updateToGenerateQRCode(notification:)), name: NSNotification.Name(rawValue: SharedConstants.Notification.didReadInputString.rawValue), object: nil)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: SharedConstants.Notification.didReadInputString.rawValue), object: nil)
     }
     
     private func setupUI() {
@@ -43,21 +51,24 @@ class QRCodeResultViewController : UIViewController {
         }
     }
     
-    func generateQRCode() {
+    func generateQRCode(complete: (()->Void)?) {
         if textInput != nil && textInput != "" {
             // generate qr code
             let genImage = coreGenerateQRCode(from: textInput!)
             
             // get qrcode image, check if it's actually generated
             if genImage != nil {
-                qrcodeImage.image = genImage
+                self.qrcodeImage.image = genImage
+                complete?()
             }
             else {
                 showError(with: .qrcodeGenerationError)
+                complete?()
             }
         }
         else {
             showError(with: .inputTextIsNullOrEmpty)
+            complete?()
         }
     }
     
@@ -92,6 +103,28 @@ class QRCodeResultViewController : UIViewController {
             let cgImage:CGImage = context.createCGImage(ciImage, from: ciImage.extent)!
             
             return UIImage(cgImage: cgImage)
+        }
+    }
+    
+    @objc func updateToGenerateQRCode(notification: NSNotification) {
+        // get input string from notif
+        let userInfo = notification.userInfo!
+        // set input string to our textInput
+        textInput = (userInfo[SharedConstants.DIDREAD_INPUTSTRING_NOTIFICATION_PARAM_STRING] as! String)
+        
+        // show loading hud first to give impression of generating a new qrcode
+        Util.showHud(view: self.view, text: "Generating a new QRCode")
+        
+        // delay time to allow a gap of time to generate qr code
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            // time to generate a new qrcode
+            self.generateQRCode {
+                // still wait for a while to let user see a dialog
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                    // ok now, hide the hud
+                    Util.hideHud(view: self.view)
+                })
+            }
         }
     }
 }
