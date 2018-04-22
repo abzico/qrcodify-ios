@@ -1,4 +1,4 @@
-[![donate button](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat)](https://github.com/haxpor/donate)
+[![donate button](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat)](https://github.com/abzico/donate)
 
 # qrcodify-ios
 iOS client app generate QRCode image from text or URL content. It supports share extension so you can share such content to qrcodify, open the app then finall found your generated QRCode image.
