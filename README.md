@@ -10,16 +10,24 @@ Whole process is offline. This means there is no Internet connection needed for 
 # What it looks like ?
 
 ![shot 1](https://i.imgur.com/RjPACZXm.png)
+
 Generate QRCode directly from your input text
 
 ![shot 2](https://i.imgur.com/Wc975l9m.png)
+
 Get your QRCode result
 
 ![shot 3](https://i.imgur.com/Pt1VGH9m.png)
+
 Or share your URL (or even text) via the app's share extension
 
 ![shot 4](https://i.imgur.com/QqitZhPm.png)
+
 Your QRCode will be generated when you open QRCodify app next time
+
+![gif](https://i.imgur.com/priCGyl.gif)
+
+Gif in action
 
 Improvement, or more features might be added thus above images might not always reflect the latest code-based.
 
